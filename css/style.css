@@ -37,6 +37,7 @@ MAIN NAV
 .mainNav a {
 	display: block;
 	padding-right: 10px;
+  padding-top: 11px;
 }
 .mainNav li{
   list-style: none;
@@ -46,8 +47,6 @@ ul {
   flex-direction: row;
   align-self: center;
   padding: 0px 0px 0px 12px;
-  align-items: center;
-  justify-content: center;
 }
 a{
   text-decoration: none;
@@ -78,4 +77,11 @@ input[type=text][target=cal] {
 }
 input[type=text][target=cal]::placeholder{
   color: grey;
+}
+.search {
+  display: inline-block;
+  text-align: center;
+}
+.search label {
+  display: block;
 }
