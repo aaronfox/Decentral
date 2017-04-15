@@ -1,11 +1,45 @@
 body{
-  background: #2996FF;
   display: flex;
   flex-direction: column;
+  background: #2C7AEC;
 }
 .signUp{
   align-self: flex-end;
 }
+button[target]{
+      background-color: white;
+      color: #2C7AEC;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 15%;
+      box-shadow: -7px 7px 10px rgba(0, 0, 0, 0.5);
+}
 .stock{
   width: 50%;
+}
+h1{
+  font-family: 'Lato', sans-serif;
+  color: white;
+  align-self: center;
+}
+/****************
+MAIN NAV
+****************/
+.mainNav a {
+	display: block;
+	padding: 0px 10px 0px 10px;
+}
+.mainNav li{
+  list-style: none;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+a{
+  text-decoration: none;
+  color: #fff;
 }

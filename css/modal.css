@@ -10,17 +10,13 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    background-color: white;
-    color: #2996FF;
+    background-color: #4CAF50;
+    color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 15%;
-    box-shadow: -7px 7px 10px rgba(0,0,0,0.5)
-}
-body:first-child{
-    justify-content: flex-end;
 }
 
 /* Extra styles for the cancel button */
