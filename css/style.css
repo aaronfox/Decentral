@@ -26,6 +26,11 @@ h1{
   align-self: center;
   padding-left: 10px;
 }
+h3{
+  font-family: 'Lato', sans-serif;
+  align-self: center;
+  color: white;
+}
 /****************
 MAIN NAV
 ****************/
@@ -51,10 +56,16 @@ a{
 /***************
 Search
 ***************/
-input[type=text] {
+input[type=text][target] {
     width: 150px;
     height: 25px;
     display: block;
     margin-bottom: 10px;
     border-radius: 25px;
+    border: solid 1px white;
+    background: #2C7AEC;
+    color: white;
+}
+input[type=text][target]::placeholder{
+  color: white;
 }
