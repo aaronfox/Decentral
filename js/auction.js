@@ -31,7 +31,7 @@ var profiles = [sampProf, sampProf2];
 
 function getProfiles() {
   $.each(profiles, function(index, profile) {
-    $(".profiles").append("<div class=\"profile\"><div class=\"profile-name\">" + profile.name + "</div><div class=\"principal\">$" + profile.principal.toFixed(2) + "</div></div>");
+    $(".profiles").append("<div class=\"profile\"><div class=\"profile-name\">" + profile.name + "</div><div class=\"principal\">$" + profile.principal.toFixed(2) + "</div><div class=\"interest\">" + profile.interest  + "%</div></div>");
   });
 }
 
