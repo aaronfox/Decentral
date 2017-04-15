@@ -18,18 +18,20 @@ button[target]{
 }
 .stock{
   width: 50%;
+  align-self: center;
 }
 h1{
   font-family: 'Lato', sans-serif;
   color: white;
   align-self: center;
+  padding-left: 10px;
 }
 /****************
 MAIN NAV
 ****************/
 .mainNav a {
 	display: block;
-	padding: 0px 10px 0px 10px;
+	padding-right: 10px;
 }
 .mainNav li{
   list-style: none;
@@ -38,6 +40,7 @@ ul {
   display: flex;
   flex-direction: row;
   align-self: center;
+  padding: 0px 0px 0px 12px;
 }
 a{
   text-decoration: none;
