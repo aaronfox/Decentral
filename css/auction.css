@@ -1,4 +1,6 @@
 .profile {
     display: flex;
     justify-content: space-around;
+    background-color: aqua;
+    border: 2px solid black;
 }
