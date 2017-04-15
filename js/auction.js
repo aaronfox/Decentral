@@ -1,5 +1,3 @@
-// TODO: Sort twitchStreamers by offline/online/not real categories
-
 // sample profile object
 var sampProf = {
     name: "John Doe",
@@ -37,4 +35,9 @@ function getProfiles() {
 
 $(document).ready(function() {
   getProfiles();
+    $(".subbySub").click(function() {
+        var loanAmount = document.getElementById("loanAmount").value;
+        var interestRate = document.getElementById("interestRate").value;
+        var monthsToPay = document.getElementById("monthsToPay").value;
+    });
 });
