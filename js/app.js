@@ -2,7 +2,7 @@ var $password = $("#password");
 var $confirmPassword = $("#confirm_password");
 $("form span").hide();
 function passwordEvent() {
-  if($($password).val().lenght>8){
+  if($($password).val().length>8){
     $($password).next().hide();
   }
   else{
@@ -18,4 +18,4 @@ function confirmPasswordEvent(){
   }
 }
 $password.focus(passwordEvent).keyup(passwordEvent);
-$confirmPassword.focus(confirmPasswordEvent).keyup(confirmPassword);
+$confirmPassword.focus(confirmPasswordEvent).keyup($confirmPassword);
