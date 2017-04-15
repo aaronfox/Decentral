@@ -56,7 +56,7 @@ a{
 /***************
 Search
 ***************/
-input[type=text][target] {
+input[type=text][target=search] {
     width: 150px;
     height: 25px;
     display: block;
@@ -66,6 +66,16 @@ input[type=text][target] {
     background: #2C7AEC;
     color: white;
 }
-input[type=text][target]::placeholder{
+input[type=text][target=search]::placeholder{
   color: white;
+}
+input[type=text][target=cal] {
+    width: 150px;
+    height: 25px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+input[type=text][target=cal]::placeholder{
+  color: grey;
 }
