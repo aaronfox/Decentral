@@ -41,8 +41,20 @@ ul {
   flex-direction: row;
   align-self: center;
   padding: 0px 0px 0px 12px;
+  align-items: center;
+  justify-content: center;
 }
 a{
   text-decoration: none;
   color: #fff;
+}
+/***************
+Search
+***************/
+input[type=text] {
+    width: 150px;
+    height: 25px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 25px;
 }
