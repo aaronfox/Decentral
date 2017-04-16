@@ -25,6 +25,7 @@ h1{
   color: white;
   align-self: center;
   padding-left: 10px;
+  text-shadow: -7px 7px 10px rgba(0, 0, 0, 0.5);
 }
 h3{
   font-family: 'Lato', sans-serif;
@@ -44,6 +45,7 @@ MAIN NAV
 }
 .mainNav li{
   list-style: none;
+  text-shadow: -7px 7px 10px rgba(0, 0, 0, 0.5);
 }
 ul {
   display: flex;
@@ -51,9 +53,18 @@ ul {
   align-self: center;
   padding: 0px 0px 0px 12px;
 }
-a{
+a[target]{
   text-decoration: none;
   color: #fff;
+}
+/***************
+Images
+***************/
+.profilePicture{
+  border-radius: 50%;
+  border: 3px solid #2C7AEC;
+  width: 60px;
+  height: 60px;
 }
 /***************
 Search
@@ -67,6 +78,7 @@ input[type=text][target=search] {
     border: solid 1px white;
     background: #2C7AEC;
     color: white;
+    box-shadow: -7px 7px 10px rgba(0, 0, 0, 0.5);
 }
 input[type=text][target=search]::placeholder{
   color: white;

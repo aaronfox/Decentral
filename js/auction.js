@@ -4,7 +4,7 @@ var sampProf = {
     currentEmployment: "Marketing Inc.",
     monthlyIncome: "2500.00",
     isA : "lender",
-    profilePicture: "http://beyondfifteen.com/wp-content/uploads/2014/08/team3.jpg",
+    profilePicture: "http://icelawfirm.com/wp-content/uploads/2013/01/team5-270x270.jpg",
     email: "johnDoe@domain.com",
     phone: "1-765-555-0967",
     principal: 500.00,
@@ -17,7 +17,7 @@ var sampProf2 = {
     currentEmployment: "Jackson Inc.",
     monthlyIncome: "5500.00",
     isA : "lendee",
-    profilePicture: "http://beyondfifteen.com/wp-content/uploads/2014/08/team3.jpg",
+    profilePicture: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/4/000/138/1d4/35f3c45.jpg",
     email: "mollyFee@domain.com",
     phone: "1-677-555-0987",
     principal: 400.00,
@@ -29,7 +29,7 @@ var profiles = [sampProf, sampProf2];
 
 function getProfiles() {
   $.each(profiles, function(index, profile) {
-    $(".profiles").append("<div class=\"profile\"><div class=\"profile-name\">" + profile.name + "</div><div class=\"principal\">$ " + profile.principal.toFixed(2) + "</div><div class=\"interest\">" + profile.interest  + "%</div><div class=\"numberOfMonths\">" + profile.numberOfMonths + "</div></div><br>");
+    $(".profiles").append("<div class=\"profile\"><img class=\"profilePicture\" src=\""+profile.profilePicture+"\"><div class=\"profile-name\">" + profile.name + "</div><div class=\"principal\">$ " + profile.principal.toFixed(2) + "</div><div class=\"interest\">" + profile.interest  + "%</div><div class=\"numberOfMonths\">" + profile.numberOfMonths + "</div></div><br>");
   });
 }
 
@@ -45,6 +45,6 @@ $(document).ready(function() {
         var interestRate = document.getElementById("interestRate").value;
         var monthsToPay = document.getElementById("monthsToPay").value;
         console.log(loanAmount * Math.pow(1 + (interestRate / 100) / monthsToPay, monthsToPay));
-        
+
     });
 });
