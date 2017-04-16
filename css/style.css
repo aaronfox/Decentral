@@ -210,9 +210,19 @@ AUCTION WEB PAGE
     width: 100px;
     text-align: center;
 }
+.calcCompInt {
+    text-align: center;
+}
+
+.calculator {
+     width: 220px;
+    border: 2px solid black;
+}
 .calculator, .calcOutput, .calc-img{
+
   padding-left: 20px;
   outline: none;
+
 }
 input[type=text][target=cal] {
     width: 200px;
