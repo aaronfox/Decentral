@@ -9,17 +9,22 @@
 }
 
 .calc-img {
+    padding-left: 20px;
     width: 60px;
     height: 60px;
+    outline: none;
 }
 
 .calculator[target = calcButton] {
     background-color: aqua;
     width: 220px;
 }
-
 .subbySub {
     background-color: aqua;
     width: 100px;
     text-align: center;
+}
+.calculator{
+  padding-left: 20px;
+  outline: none;
 }
