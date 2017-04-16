@@ -7,3 +7,13 @@
     box-shadow: -7px 7px 10px rgba(0, 0, 0, 0.5);
     padding: 2px;
 }
+
+.calc-img {
+    width: 60px;
+    height: 60px;
+}
+
+.calculator[target = calcButton] {
+    background-color: aqua;
+    width: 200px;
+}
