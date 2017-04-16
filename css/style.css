@@ -126,16 +126,6 @@ input[type=text][target=search] {
 input[type=text][target=search]::placeholder{
   color: white;
 }
-input[type=text][target=cal] {
-    width: 200px;
-    height: 25px;
-    display: block;
-    margin-bottom: 10px;
-    border-radius: 25px;
-}
-input[type=text][target=cal]::placeholder{
-  color: grey;
-}
 .search {
   display: inline-block;
   text-align: center;
@@ -159,7 +149,6 @@ input[type='radio']:after {
     visibility: visible;
     border: 2px solid white;
 }
-
 input[type='radio']:checked:after {
     width: 15px;
     height: 15px;
@@ -211,7 +200,6 @@ AUCTION WEB PAGE
     width: 60px;
     height: 60px;
 }
-
 .calculator[target = calcButton] {
     background-color: aqua;
     width: 220px;
@@ -222,13 +210,19 @@ AUCTION WEB PAGE
     width: 100px;
     text-align: center;
 }
-.calculator {
-    text-align: center;
-}
-
 .calculator, .calcOutput, .calc-img{
   padding-left: 20px;
   outline: none;
+}
+input[type=text][target=cal] {
+    width: 200px;
+    height: 25px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+input[type=text][target=cal]::placeholder{
+  color: grey;
 }
 /**************
 MODAL WEBPAGE
