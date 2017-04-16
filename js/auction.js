@@ -48,10 +48,23 @@ function getProfiles() {
 
 $(document).ready(function() {
   getProfiles();
+    var isCalculating = false;
     $(".calculator").hide();
     $(".calcButton").click(function() {
-        $(".calcButton").hide();
-        $(".calculator").show();
+        if (isCalculating == false) {
+            $(".calcButton").hide();
+            $(".calculator").show();
+            isCalculating = true;
+        }
+        else {
+            $(".calcButton").hide();
+            $(".calculator").show();
+            $(".h3calcOutput").hide();
+            isCalculating = false;
+        }
+        //$(".calcButton").hide();
+        //$(".calculator").show();
+        //$(".h3calcOutput").hide();
     });
     $(".subbySub").click(function() {
         var loanAmount = document.getElementById("loanAmount").value;
@@ -60,7 +73,8 @@ $(document).ready(function() {
         var result = loanAmount * Math.pow(1 + (interestRate / 100) / monthsToPay, monthsToPay);
         result = result.toFixed(2);
         $(".calculator").hide();
-        $(".h3calcOutput").html("Your compound interest on this loan will be $ " + result + " (Click to calculate again)");
+        $(".h3calcOutput").show();
+        $(".h3calcOutput").html("Your compound interest on this loan will be $ " + result);
         $(".calcButton").show()
     });
 });
