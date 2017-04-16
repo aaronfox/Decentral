@@ -227,9 +227,16 @@ AUCTION WEB PAGE
     text-align: center;
 }
 
+.calculator {
+     width: 220px;
+    border: 2px solid black;
+}
+
 .calculator, .calcOutput, .calc-img{
+   
   padding-left: 20px;
   outline: none;
+    
 }
 /**************
 MODAL WEBPAGE
