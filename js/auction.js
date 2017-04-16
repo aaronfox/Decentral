@@ -35,10 +35,16 @@ function getProfiles() {
 
 $(document).ready(function() {
   getProfiles();
+    $(".calculator").hide();
+    $(".calcButton").click(function() {
+        $(".calcButton").hide();
+        $(".calculator").show();
+    });
     $(".subbySub").click(function() {
         var loanAmount = document.getElementById("loanAmount").value;
         var interestRate = document.getElementById("interestRate").value;
         var monthsToPay = document.getElementById("monthsToPay").value;
         console.log(loanAmount * Math.pow(1 + (interestRate / 100) / monthsToPay, monthsToPay));
+        
     });
 });
