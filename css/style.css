@@ -184,12 +184,24 @@ AUCTION WEB PAGE
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
     background-color: white;
     color: #2C7AEC;
     box-shadow: -7px 7px 10px rgba(0, 0, 0, 0.5);
     padding: 2px;
 }
-
+.profile-name{
+  width: 15%;
+}
+.principal{
+  width: 15%;
+}
+.interest{
+  width: 15%;
+}
+.numberOfMonths{
+  width: 15%
+}
 .calc-img {
     width: 60px;
     height: 60px;
