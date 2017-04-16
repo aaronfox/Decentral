@@ -60,6 +60,7 @@ $(document).ready(function() {
         var result = loanAmount * Math.pow(1 + (interestRate / 100) / monthsToPay, monthsToPay);
         result = result.toFixed(2);
         $(".calculator").hide();
-        $(".h1calcOutput").html("Your compound interest on this loan will be $ " + result + "(Click to calculate again)");
+        $(".h3calcOutput").html("Your compound interest on this loan will be $ " + result + " (Click to calculate again)");
+        $(".calcButton").show()
     });
 });
