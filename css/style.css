@@ -88,15 +88,3 @@ input[type=text][target=cal]::placeholder{
 .search label {
   display: block;
 }
-input[type="radio"] {
-    display:none;
-}
-input[type="radio"]:checked + label span {
-    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -57px top no-repeat;
-}
-input[type=radio]{
-  border: 5px solid #0DFF92;
-}
-input[type=radio]{
-  background: #0DFF92;
-}
