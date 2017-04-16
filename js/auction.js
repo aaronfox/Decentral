@@ -25,7 +25,20 @@ var sampProf2 = {
     numberOfMonths: 7
     }
 
-var profiles = [sampProf, sampProf2];
+var sampProf3 = {
+    name: "Richard Smith",
+    currentEmployment: "GAE LLC",
+    monthlyIncome: "7500.00",
+    isA : "both",
+    profilePicture: "http://www.wileyrein.com/assets/images/248.jpeg",
+    email: "mollyFee@domain.com",
+    phone: "1-775-555-3095",
+    principal: 800.00,
+    interest: 7,
+    numberOfMonths: 12
+    }
+
+var profiles = [sampProf, sampProf2, sampProf3];
 
 function getProfiles() {
   $.each(profiles, function(index, profile) {
@@ -44,7 +57,9 @@ $(document).ready(function() {
         var loanAmount = document.getElementById("loanAmount").value;
         var interestRate = document.getElementById("interestRate").value;
         var monthsToPay = document.getElementById("monthsToPay").value;
-        console.log(loanAmount * Math.pow(1 + (interestRate / 100) / monthsToPay, monthsToPay));
-
+        var result = loanAmount * Math.pow(1 + (interestRate / 100) / monthsToPay, monthsToPay);
+        result = result.toFixed(2);
+        $(".calculator").hide();
+        $(".h1calcOutput").html("Your compound interest on this loan will be $ " + result + "(Click to calculate again)");
     });
 });
