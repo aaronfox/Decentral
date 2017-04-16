@@ -15,5 +15,11 @@
 
 .calculator[target = calcButton] {
     background-color: aqua;
-    width: 200px;
+    width: 220px;
+}
+
+.subbySub {
+    background-color: aqua;
+    width: 100px;
+    text-align: center;
 }
